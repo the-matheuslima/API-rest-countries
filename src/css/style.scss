@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'variebles';
+@import 'mixin';
+
+body{
+    background-color: var(--bg-color);
+    max-width: 1440px;
+    margin: auto;
+}
+
+header {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+    box-shadow: 0px 1px 2px var(--input-color);
+}
+
+#countries{
+    @include centerContainer(center);
+    flex-wrap: wrap;
+    gap: 73px 70px;
+}
+
+@import 'mixin';
+@import 'dark-mode';
+@import 'header';
+@import 'search';
+@import 'card-countries';
+@import 'country-pg';
+@import 'media';

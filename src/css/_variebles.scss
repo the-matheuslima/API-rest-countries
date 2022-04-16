@@ -1,0 +1,23 @@
+$Dark-Blue-Dark-Mode-Elements: #2b3945;
+$Very-Dark-Blue-Dark-Mode-Background: #202c37;
+$Very-Dark-Blue-Light-Mode-Text: #111517;
+$Dark-Gray-Light-Mode-Input: #858585;
+$Very-Light-Gray-Light-Mode-Background: #fafafa;
+$White-Dark-Mode-Text-e-Light-Mode-Elements: #ffffff;
+
+:root{
+    --bg-color: #fafafa;
+    --elements-color: #ffffff;
+    --text-color: #111517;
+    --input-color: #858585;
+}
+
+.dark-mode:root{
+    --bg-color: #202c37;
+    --elements-color: #2b3945;
+    --text-color: #ffffff;
+    --input-color: #202c37;
+}
+
+
+

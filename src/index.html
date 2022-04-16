@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <title>REST COUNTRIES</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 ><strong>Where in the world?</strong></h1>
+
+            <p id="btn-mode"><i class="fa-light fa-moon"></i> Dark Mode</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="filter-search" >
+            <div class="search">
+                <span class="lupa"><i class="fa-regular fa-magnifying-glass"></i></span>
+                <input type="text" class="search-country" placeholder="Search for a country">
+            </div>
+
+            <div class="filter-region">
+                <button class="btn-filter">Filter by Region <i class="arrow fa-regular fa-angle-up"></i></button>
+                <ul class="region-list">
+                    <li class="region" data-val="africa">Africa</li>
+                    <li class="region" data-val="americas">America</li>
+                    <li class="region" data-val="asia">Asia</li>
+                    <li class="region" data-val="europe">Europe</li>
+                    <li class="region" data-val="oceania">oceania</li>
+                </ul>
+            <div>
+        </section>
+
+        <section id="countries">
+        </section>
+    </main>
+
+<script src="script/index.js"></script>
+</body>
+</html>

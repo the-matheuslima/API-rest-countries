@@ -1,0 +1,73 @@
+.filter-search{
+    @include centerContainer(space-between);
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 1rem;
+
+    .search{
+        width: 46%;
+    }
+
+    .search-country{
+        height: 40px;
+        width: 80%;
+        padding: 1rem;
+        background-color: var(--elements-color);
+        color: var(--text-color);
+        transform: translateY(-1px);
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.filter-region{
+    background-color: var(--elements-color);
+    color: var(--text-color);
+
+    .btn-filter {
+        background-color: var(--elements-color);
+        color: var(--text-color);
+        cursor: pointer;
+        padding: 1rem;
+        width: 170px;
+        margin-bottom: 3px;
+        @include boxShadow;
+    }
+}
+
+.arrow{
+    transition:  0.5s;
+    margin-left: 1rem;
+
+    &.active{
+        transform: rotate(180deg);
+    }
+}
+
+.region-list{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    @include boxShadow;
+    background-color: var(--elements-color);
+    border-radius: 0 0 5px 5px;
+
+    &.active{
+        display: block;
+    }
+
+    li {
+        width: 170px;
+        padding: 0.2rem 2rem;
+        cursor: pointer;
+    }
+}
+
+.lupa {
+    cursor: pointer;
+    background-color: var(--elements-color);
+    color: var(--text-color);
+    padding: 0.563rem 0.5rem;
+    margin: -4px;
+}

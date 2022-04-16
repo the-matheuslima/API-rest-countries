@@ -1,0 +1,10 @@
+.header-container {
+    @include centerContainer(space-between);
+
+        h1{
+            font-size: 1.5rem;
+        }
+        #btn-mode {
+            cursor: pointer;
+        }
+} 
