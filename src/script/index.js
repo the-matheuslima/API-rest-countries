@@ -67,7 +67,6 @@ function handleKeypress({key, target}) {
     }
 }
 
-
 const $searchCountry = document.querySelector('.search-country')
 const $regionList = document.querySelector('.region-list');
 const $html = document.querySelector('html');

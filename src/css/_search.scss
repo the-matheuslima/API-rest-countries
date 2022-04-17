@@ -11,8 +11,7 @@
         height: 40px;
         width: 80%;
         padding: 1rem;
-        background-color: var(--elements-color);
-        color: var(--text-color);
+        @include mainColors;
         transform: translateY(-1px);
 
         &:focus {
@@ -22,12 +21,10 @@
 }
 
 .filter-region{
-    background-color: var(--elements-color);
-    color: var(--text-color);
+    @include mainColors;
 
     .btn-filter {
-        background-color: var(--elements-color);
-        color: var(--text-color);
+        @include mainColors;
         cursor: pointer;
         padding: 1rem;
         width: 170px;
@@ -66,8 +63,7 @@
 
 .lupa {
     cursor: pointer;
-    background-color: var(--elements-color);
-    color: var(--text-color);
+    @include mainColors;
     padding: 0.563rem 0.5rem;
     margin: -4px;
 }

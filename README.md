@@ -13,6 +13,16 @@ Users should be able to:
 - Click through to the border countries on the detail page
 - Toggle the color scheme between light and dark mode
 
+#### screenshot
+
+## Desktop
+![gif](./src/screenshot/screenshot-desktop.mp4)
+
+## mobile 
+![screenshot](./src/screenshot/country-mobile.png)
+
+![screenshot](./src/screenshot/rest-countries-mobile.png)
+
 ### Built with
 
 - Semantic HTML5 markup

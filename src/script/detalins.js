@@ -67,7 +67,6 @@ function createPageCountry(data){
 
 async function getTags(tagsCountry){
 
-    console.log(tagsCountry)
     const response = await fetch(`https://restcountries.com/v3.1/alpha/${tagsCountry}`);
     const data = await response.json();
 
@@ -75,7 +74,7 @@ async function getTags(tagsCountry){
 }
 
 document.querySelector('.back').addEventListener('click', () => {
-    window.location = 'index.html'
+window.location = 'index.html'
 })
 
 const $html = document.querySelector('html')
@@ -83,5 +82,4 @@ const $btnMode = document.querySelector('#btn-mode')
 
 $btnMode.addEventListener('click', () => {
     $html.classList.toggle('dark-mode')
-    console.log($html)
 })

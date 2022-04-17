@@ -1,13 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: none;
-  list-style: none;
-  font-family: 'Nunito Sans', sans-serif;
-}
-
 :root {
   --bg-color: #fafafa;
   --elements-color: #ffffff;
@@ -20,6 +10,16 @@
   --elements-color: #2b3945;
   --text-color: #ffffff;
   --input-color: #202c37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  list-style: none;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
@@ -324,4 +324,4 @@ header {
         flex-wrap: wrap !important;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

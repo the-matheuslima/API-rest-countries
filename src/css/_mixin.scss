@@ -8,6 +8,11 @@
     box-shadow: 0px 0px 2px 0px var(--input-color);
 }
 
+@mixin mainColors(){
+    background-color: var(--elements-color);
+    color: var(--text-color);
+}
+
 @mixin tags {
     cursor: pointer;
     font-size: 0.7rem;
