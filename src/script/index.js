@@ -3,29 +3,35 @@ const $countriesEl = document.querySelector('#countries')
 async function getCountries(){
     await fetch('https://restcountries.com/v3.1/all')
     .then(response => response.json() )
-    .then(data => createCard(data))
+    .then(data => {
+        return createCard(data)
+    })
     .catch(err => alert(`[ERRO]: something is wrong, ${err}`))
 }
 
 async function filterByRegion(region) {
     await fetch(`https://restcountries.com/v3.1/region/${region}`)
     .then(response => response.json())
-    .then(data => createCard(data))
-    .catch(err => alert(`[ERRO]: ${err}something is wrong`))
+    .then(data => {
+        return createCard(data)
+    })
+    .catch(err => alert(`[ERRO]: ${err} something is wrong`))
 }
+getCountries()
 
 async function searchByName(name) {
     await fetch(`https://restcountries.com/v3.1/name/${name}?fullText=true`)
     .then(response => response.json())
-    .then(data => createCard(data))
+    .then(data => {
+        return createCard(data)
+    })
     .catch(err => alert(`[ERRO]: something is wrong`))
 }
 
-getCountries()
-
 function createCard(data) {
     $countriesEl.innerHTML = ''
-    data.forEach((country) => {
+
+    data.slice(0,30).forEach((country) => {
 
         let { name, population, region, capital, flags } = country
 
@@ -51,14 +57,14 @@ function getId(array) {
     array.forEach((item) => {
         item.addEventListener("click", () => {
             let countryName = item.getAttribute('data-val').toLocaleLowerCase();
-            MoreInfo(countryName, 'country-Info.html')
+            MoreInfo(countryName)
         })
     });
 }
 
-function MoreInfo(id, destination) {
+function MoreInfo(id) {
     sessionStorage.setItem("id", id)
-    window.location = destination
+    window.location.href = 'country-Info.html'
 }
 
 function handleKeypress({key, target}) {
