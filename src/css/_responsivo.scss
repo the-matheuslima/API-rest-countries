@@ -4,3 +4,9 @@
         flex-wrap: wrap !important;
     }
 }
+
+@media (max-width: 409px) {
+    .filter-search .search{
+       width: 100%;  
+    }
+}
