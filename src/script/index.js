@@ -4,7 +4,7 @@ async function getCountries(){
     await fetch('https://restcountries.com/v3.1/all')
     .then(response => response.json() )
     .then(data => {
-        return createCard(data)
+        return createCard(data.slice(0,30))
     })
     .catch(err => alert(`[ERRO]: something is wrong, ${err}`))
 }
@@ -31,7 +31,7 @@ async function searchByName(name) {
 function createCard(data) {
     $countriesEl.innerHTML = ''
 
-    data.slice(0,30).forEach((country) => {
+    data.forEach((country) => {
 
         let { name, population, region, capital, flags } = country
 
