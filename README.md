@@ -16,7 +16,9 @@ Users should be able to:
 #### screenshot
 
 ## Desktop
-![gif](./src/screenshot/screenshot-desktop.mp4)
+
+https://user-images.githubusercontent.com/96140653/163897307-3c35b09c-38ca-4465-b5e8-7327d50f05ee.mp4
+
 
 ## mobile 
 ![screenshot](./src/screenshot/country-mobile.png)
